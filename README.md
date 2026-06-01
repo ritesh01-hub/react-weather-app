@@ -1,18 +1,149 @@
-# React + Vite
+# 🌤️ React Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive weather search widget built with **React** and **Material UI**, powered by the **OpenWeatherMap API**. Search any city and get real-time weather data instantly.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat&logo=vite&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-v6-007FFF?style=flat&logo=mui&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- 🔍 **City Search** — Look up weather for any city worldwide
+- 🌡️ **Real-time Data** — Temperature, feels like, min/max, and humidity
+- 🌫️ **Weather Condition** — Displays current weather description with emoji
+- 📱 **Responsive Design** — Works seamlessly on desktop and mobile
+- ⚡ **Fast** — Built with Vite for lightning-fast dev and build
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Search for any city and instantly see current weather conditions.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 19 | UI Framework |
+| Vite | Build Tool |
+| Material UI (MUI) v6 | Component Library |
+| OpenWeatherMap API | Weather Data |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js `v18+`
+- An [OpenWeatherMap API key](https://openweathermap.org/api) (free tier works)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/ritesh01-hub/react-weather-app.git
+
+# 2. Navigate into the project
+cd react-weather-app
+
+# 3. Install dependencies
+npm install
+```
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_WEATHER_API_KEY=your_openweathermap_api_key_here
+```
+
+> ⚠️ Never commit your `.env` file. It's already in `.gitignore`.
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📁 Project Structure
+
+```
+react-weather-app/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── assets/
+│   ├── App.jsx           # Root component
+│   ├── WeatherWidget.jsx # Parent: fetches weather data
+│   ├── SearchBox.jsx     # City search input
+│   ├── SearchBox.css
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .env                  # API key (not committed)
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 🔧 Available Scripts
+
+```bash
+npm run dev       # Start development server
+npm run build     # Build for production
+npm run preview   # Preview production build
+npm run lint      # Run ESLint
+```
+
+---
+
+## 🌐 API Reference
+
+This app uses the [OpenWeatherMap Current Weather API](https://openweathermap.org/current).
+
+**Endpoint:**
+```
+GET https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+```
+
+---
+
+## 📌 Roadmap
+
+- [ ] Loading spinner during API call
+- [ ] Weather-based dynamic background
+- [ ] 5-day forecast view
+- [ ] Geolocation support (auto-detect city)
+- [ ] Dark mode toggle
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Ritesh** — [@ritesh01-hub](https://github.com/ritesh01-hub)
