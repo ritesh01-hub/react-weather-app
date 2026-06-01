@@ -21,7 +21,7 @@ A clean, responsive weather search widget built with **React** and **Material UI
 
 ## 🖼️ Preview
 
-> Search for any city and instantly see current weather conditions.
+> [!img](https://github.com/ritesh01-hub/react-weather-app/blob/6e3552866fff9a397e1bef101cc76eefcd45276a/Screenshot%202026-06-01%20174022.png)
 
 ---
 
